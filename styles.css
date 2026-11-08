@@ -12,17 +12,26 @@ body {
     font-family: "Oswald";
 }
 
-p {
+div.centered-objects {
+    width: 50%;
+    max-width: fit-content;
+    margin-inline: auto;
+}
+
+p.message {
     text-indent: 70px;
     font-size: 30px;
     text-align: center;
-    max-width: 50%;
     align-items: center;
-    padding-left: 25%;
-    padding-right: 25%;
 }
 
-ul {
+p {
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -30,11 +39,11 @@ ul {
     background-color: #060d22;
 }
 
-ul li {
+nav ul li {
     float: left;
 }
 
-ul li a {
+nav ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -42,11 +51,38 @@ ul li a {
     text-decoration: none;
 }
 
-ul li a:hover {
+nav ul li a:hover {
     background-color: #030713;
+}
+
+.row {
+    display: flex;
+    max-width: fit-content;
+    margin-inline: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+.column {
+    flex: auto;
+    padding: 5px; 
+}
+
+.hidden-link {
+    display: none;
+    text-decoration: none;
+}
+
+.item:hover {
+    scale: 2;
+}
+
+.item:hover a {
+    display: block;
 }
 
 #title {
     font-size: 60px;
     text-align: center;
+    align-items: center;
 }
